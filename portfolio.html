@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | Khansa Wali, Python Developer | AI &amp; Machine Learning</title>
+  <meta name="description" content="Projects by Khansa Wali across machine learning, AI and computer vision, built to explore real-world problems with Python.">
+  <meta name="theme-color" content="#080B14">
+  <meta property="og:title" content="Portfolio | Khansa Wali">
+  <meta property="og:description" content="Turning Ideas Into Working Solutions.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/khansa-cutout.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body data-page="portfolio">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="logo" aria-label="Khansa Wali, home">KW<span>.</span></a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="index.html#home" data-link="home">Home</a>
+        <a href="index.html#about" data-link="about">About</a>
+        <a href="index.html#expertise" data-link="expertise">Expertise</a>
+        <a href="services.html" data-link="services">Services</a>
+        <a href="portfolio.html" data-link="portfolio">Portfolio</a>
+        <a href="index.html#journey" data-link="journey">Journey</a>
+        <a href="contact.html" data-link="contact">Contact</a>
+        <a href="assets/Khansa-Wali-CV.pdf" class="btn btn--sm btn--ghost nav__cv-mobile" target="_blank" rel="noopener">My Resume</a>
+      </nav>
+      <a href="assets/Khansa-Wali-CV.pdf" class="btn btn--sm btn--ghost nav__cv" target="_blank" rel="noopener">
+        My Resume <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l5 5v13H7zM14 3v5h5M10 13h6M10 17h6"/></svg>
+      </a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- 01 HERO -->
+    <section class="pf-hero">
+      <div class="pf-hero__glow" aria-hidden="true"></div>
+      <span class="pf-chip pf-chip--a" aria-hidden="true">&lt;python/&gt;</span>
+      <span class="pf-chip pf-chip--b" aria-hidden="true">yolov8</span>
+      <span class="pf-chip pf-chip--c" aria-hidden="true">fastapi</span>
+      <div class="container">
+        <p class="eyebrow"><span class="dot"></span> Portfolio <i>|</i> Python Developer &amp; AI</p>
+        <h1 class="pf-title" aria-label="Turning Ideas Into Working Solutions.">
+          <span class="line"><span style="--d:.05s">Turning Ideas Into</span></span>
+          <span class="line"><span style="--d:.18s" class="grad">Working Solutions.</span></span>
+        </h1>
+        <p class="pf-hero__sub reveal" style="--d:.4s">Explore a collection of projects across software development, automation, data, and artificial intelligence, where technical learning meets practical problem-solving.</p>
+        <div class="hero__cta reveal" style="--d:.5s">
+          <a href="#all-work" class="btn btn--primary">Browse All Work <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m0 0-5-5m5 5-5 5"/></svg></a>
+          <a href="#featured-section" class="btn btn--ghost">Featured Projects</a>
+        </div>
+        <p class="pf-meta mono reveal" style="--d:.6s" id="pfMeta"></p>
+      </div>
+    </section>
+
+    <!-- 02 FEATURED -->
+    <section class="pf-section" id="featured-section">
+      <div class="container">
+        <div class="pf-head reveal">
+          <p class="label"><span>01</span> Featured Projects</p>
+          <h2 class="h2">Ideas Into Applications.<br><span class="grad">Learning Through Building.</span></h2>
+        </div>
+        <div id="featured"></div>
+      </div>
+    </section>
+
+    <!-- 03 ALL WORK -->
+    <section class="pf-section" id="all-work">
+      <div class="container">
+        <div class="pf-head reveal">
+          <p class="label"><span>02</span> All Work</p>
+          <h2 class="h2">All <span class="grad">Work</span></h2>
+          <p class="section__sub">A collection of experiments, applications, and technical projects across different areas of development.</p>
+        </div>
+        <div class="pf-controls reveal">
+          <div class="pills" id="filters" role="group" aria-label="Filter projects by category"></div>
+          <label class="search"><span class="sr" style="position:absolute;left:-999px">Search projects</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input type="search" id="search" placeholder="Search projects" autocomplete="off">
+          </label>
+        </div>
+        <p class="pf-count mono" id="count" aria-live="polite"></p>
+        <div class="pgrid" id="grid"></div>
+        <div class="empty" id="empty" hidden></div>
+      </div>
+    </section>
+
+    <!-- 04 AREAS -->
+    <section class="pf-section" id="areas-section">
+      <div class="container">
+        <div class="pf-head pf-head--center reveal">
+          <p class="label"><span>03</span> Browse by Area</p>
+          <h2 class="h2">Work Organised <span class="grad">By Service</span></h2>
+          <p class="section__sub">The same seven areas as my Services page. An area with no projects yet is shown as such, and nothing is added to fill it.</p>
+        </div>
+        <div class="areas" id="areas"></div>
+      </div>
+    </section>
+
+    <!-- CLOSING CTA -->
+    <section class="pf-section pf-cta" id="project">
+      <div class="container">
+        <div class="final reveal">
+          <p class="label"><span>&bull;</span> Let&rsquo;s Talk</p>
+          <h2 class="final__title">Have a Project <span class="grad">in Mind?</span></h2>
+          <p class="final__copy">Have an idea, a technical challenge, or a problem worth solving? Let&rsquo;s explore the possibilities and discuss an approach that makes sense.</p>
+          <div class="hero__cta">
+            <a href="#" class="btn btn--primary" data-contact>Let&rsquo;s Talk <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m0 0-5-5m5 5-5 5"/></svg></a>
+            <a href="services.html" class="btn btn--ghost">See Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="index.html" class="logo" aria-label="Khansa Wali, back to top">KW<span>.</span></a>
+        <p class="footer__name">Khansa Wali</p>
+        <p class="muted footer__pos">Python Developer | AI &amp; Machine Learning. Building Today. Exploring Tomorrow.</p>
+      </div>
+      <nav aria-label="Footer">
+        <h4 class="mono muted">Navigate</h4>
+        <a href="index.html#home">Home</a><a href="index.html#about">About</a><a href="index.html#expertise">Expertise</a><a href="services.html">Services</a><a href="portfolio.html">Portfolio</a><a href="index.html#journey">Journey</a><a href="contact.html">Contact</a>
+      </nav>
+      <div>
+        <h4 class="mono muted">Connect</h4>
+        <a href="https://www.linkedin.com/in/khansa-wali/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/Khansa-wali/" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:khansawali.dev@gmail.com">Email</a>
+      </div>
+    </div>
+    <div class="container footer__bar">
+      <span class="muted">&copy; <span id="year">2026</span> Khansa Wali. All rights reserved.</span>
+      <a href="#main" class="muted">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <!-- PROJECT DETAIL -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal__backdrop" data-modal-close></div>
+    <div class="modal__shell" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button type="button" class="modal__close" data-modal-close aria-label="Close project details"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      <div class="modal__panel"><div id="modalBody"></div></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/projects-data.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

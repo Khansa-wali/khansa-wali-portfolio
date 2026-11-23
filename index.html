@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Khansa Wali | Python Developer &amp; AI / Machine Learning</title>
+  <meta name="description" content="Khansa Wali is a Python developer exploring Artificial Intelligence and Machine Learning, building practical software and working towards a technology company of her own.">
+  <meta name="theme-color" content="#080B14">
+  <meta property="og:title" content="Khansa Wali | Python Developer &amp; AI / Machine Learning">
+  <meta property="og:description" content="Building Today. Exploring Tomorrow.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/khansa-cutout.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="logo" aria-label="Khansa Wali, home">KW<span>.</span></a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#home" data-link="home">Home</a>
+        <a href="#about" data-link="about">About</a>
+        <a href="#expertise" data-link="expertise">Expertise</a>
+        <a href="services.html" data-link="services">Services</a>
+        <a href="portfolio.html" data-link="portfolio">Portfolio</a>
+        <a href="#journey" data-link="journey">Journey</a>
+        <a href="contact.html" data-link="contact">Contact</a>
+        <a href="assets/Khansa-Wali-CV.pdf" class="btn btn--sm btn--ghost nav__cv-mobile" target="_blank" rel="noopener">My Resume</a>
+      </nav>
+      <a href="assets/Khansa-Wali-CV.pdf" class="btn btn--sm btn--ghost nav__cv" target="_blank" rel="noopener">
+        My Resume <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l5 5v13H7zM14 3v5h5M10 13h6M10 17h6"/></svg>
+      </a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home" data-section="home">
+      <canvas class="hero__net" id="net" aria-hidden="true"></canvas>
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="dot"></span> Python Developer <i>|</i> AI &amp; Machine Learning</p>
+          <h1 class="hero__title" aria-label="Building Intelligent Solutions. Shaping What's Next.">
+            <span class="line"><span style="--d:.05s">Building</span></span>
+            <span class="line"><span style="--d:.15s">Intelligent</span></span>
+            <span class="line"><span style="--d:.25s" class="grad">Solutions.</span></span>
+            <span class="line line--sub"><span style="--d:.4s">Shaping What&rsquo;s Next.</span></span>
+          </h1>
+          <p class="hero__intro reveal" style="--d:.55s">
+            I&rsquo;m a Python developer passionate about building practical software solutions and exploring the possibilities of Artificial Intelligence. I enjoy turning ideas into functional applications and continuously expanding my understanding of technology.
+          </p>
+          <div class="hero__cta reveal" style="--d:.7s">
+            <a href="#projects" class="btn btn--primary">Explore My Work <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m0 0-5-5m5 5-5 5"/></svg></a>
+            <a href="#contact" class="btn btn--ghost">Let&rsquo;s Connect</a>
+          </div>
+          <a href="assets/Khansa-Wali-CV.pdf" class="textlink reveal" style="--d:.8s" target="_blank" rel="noopener">My Resume <span>&nearr;</span></a>
+        </div>
+
+        <div class="hero__visual">
+          <div class="portrait" id="portrait">
+            <div class="portrait__halo" aria-hidden="true"></div>
+            <svg class="portrait__orbit" viewBox="0 0 400 400" aria-hidden="true">
+              <defs>
+                <linearGradient id="og" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#39D9E6"/><stop offset=".55" stop-color="#477BFF"/><stop offset="1" stop-color="#9B7BFF"/>
+                </linearGradient>
+              </defs>
+              <circle cx="200" cy="200" r="190" fill="none" stroke="url(#og)" stroke-opacity=".35" stroke-width="1"/>
+              <circle cx="200" cy="200" r="150" fill="none" stroke="#F4F6FC" stroke-opacity=".08" stroke-dasharray="2 8"/>
+              <circle cx="390" cy="200" r="4" fill="#39D9E6"/>
+            </svg>
+            <picture>
+              <source srcset="assets/img/khansa-cutout.webp" type="image/webp">
+              <img src="assets/img/khansa-cutout.png" alt="Portrait of Khansa Wali" width="818" height="1149" fetchpriority="high">
+            </picture>
+            <span class="chip chip--a" aria-hidden="true">&lt;python/&gt;</span>
+            <span class="chip chip--b" aria-hidden="true">yolov8</span>
+            <span class="chip chip--c" aria-hidden="true">fastapi</span>
+          </div>
+          <div class="hero__tag">
+            <span class="mono">KHANSA WALI</span>
+            <span class="mono muted">Building Today. Exploring Tomorrow.</span>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scrollhint" aria-label="Scroll to About"><span></span></a>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Python</span><i></i><span>Software Development</span><i></i><span>FastAPI</span><i></i><span>Machine Learning</span><i></i><span>Deep Learning</span><i></i><span>Computer Vision</span><i></i><span>YOLOv8</span><i></i><span>Product Thinking</span><i></i>
+        <span>Python</span><i></i><span>Software Development</span><i></i><span>FastAPI</span><i></i><span>Machine Learning</span><i></i><span>Deep Learning</span><i></i><span>Computer Vision</span><i></i><span>YOLOv8</span><i></i><span>Product Thinking</span><i></i>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about" data-section="about">
+      <div class="container about">
+        <div class="about__head reveal">
+          <p class="label"><span>01</span> About</p>
+          <h2 class="h2">More Than Code.<br><span class="grad">A Mindset for Building.</span></h2>
+        </div>
+        <div class="about__body">
+          <p class="lead reveal">I&rsquo;m a Computer Science professional building my career in Python and software development, while exploring Artificial Intelligence and Machine Learning on the side that keeps me curious.</p>
+          <p class="reveal">I like problems that have to actually work. That means writing the logic, wiring the pieces together, and learning whatever the project demands along the way. My projects range from machine learning models to a full traffic management application, and each one has taught me something a tutorial could not.</p>
+          <p class="reveal">I see code as a means to an end: useful products that make something easier, faster or smarter. That is the direction I&rsquo;m building towards.</p>
+          <ul class="facts reveal">
+            <li><span class="mono muted">focus</span><b>Python &amp; software development</b></li>
+            <li><span class="mono muted">exploring</span><b>AI, machine learning &amp; computer vision</b></li>
+            <li><span class="mono muted">building towards</span><b>Products, and one day a company</b></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERTISE ============ -->
+    <section class="section" id="expertise" data-section="expertise">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="label"><span>02</span> Expertise</p>
+          <h2 class="h2">What I <span class="grad">Do</span></h2>
+          <p class="section__sub">Three areas where I build, learn and keep getting better.</p>
+        </div>
+        <div class="cards3">
+          <article class="card tilt reveal" style="--d:0s">
+            <span class="card__num mono">01</span>
+            <div class="card__icon"><svg viewBox="0 0 24 24"><path d="m8 8-5 4 5 4m8-8 5 4-5 4M14 5l-4 14"/></svg></div>
+            <h3>Python Development</h3>
+            <ul>
+              <li>Programming and application logic</li>
+              <li>Python-based development</li>
+              <li>Backend development</li>
+              <li>APIs and integrations</li>
+            </ul>
+          </article>
+          <article class="card tilt reveal" style="--d:.1s">
+            <span class="card__num mono">02</span>
+            <div class="card__icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div>
+            <h3>Software &amp; Application Development</h3>
+            <ul>
+              <li>Application workflows</li>
+              <li>Frontend / backend integration</li>
+              <li>Databases</li>
+              <li>Automation</li>
+            </ul>
+          </article>
+          <article class="card tilt reveal" style="--d:.2s">
+            <span class="card__num mono">03</span>
+            <div class="card__icon"><svg viewBox="0 0 24 24"><circle cx="5" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="9" r="2"/><circle cx="19" cy="17" r="2"/><path d="M7 6l3.5 5M7 18l3.5-5M14 11l3.5-1.5M14 13l3.5 3"/></svg></div>
+            <h3>Artificial Intelligence &amp; Machine Learning</h3>
+            <ul>
+              <li>Predictive machine learning</li>
+              <li>Deep learning</li>
+              <li>Computer vision</li>
+              <li>Intelligent applications</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects" data-section="projects">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="label"><span>03</span> Featured Projects</p>
+          <h2 class="h2">Ideas Into Applications.<br><span class="grad">Learning Through Building.</span></h2>
+        </div>
+
+        <!-- Flagship -->
+        <article class="project project--flagship tilt reveal">
+          <div class="project__media">
+            <svg viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Abstract illustration of a road scene with detection frames">
+              <defs>
+                <linearGradient id="pg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#39D9E6"/><stop offset="1" stop-color="#9B7BFF"/></linearGradient>
+              </defs>
+              <rect width="400" height="240" fill="#0d1220"/>
+              <path d="M120 240 200 20 280 240" fill="#131a2b"/>
+              <path d="M200 20v220" stroke="#F4F6FC" stroke-opacity=".18" stroke-dasharray="10 12"/>
+              <path d="M0 150h400" stroke="#F4F6FC" stroke-opacity=".05"/><path d="M0 90h400" stroke="#F4F6FC" stroke-opacity=".05"/>
+              <g class="scan"><rect x="0" y="0" width="400" height="2" fill="#39D9E6" opacity=".5"/></g>
+              <g fill="none" stroke="url(#pg1)" stroke-width="1.5">
+                <rect x="140" y="130" width="52" height="34" rx="3"/>
+                <rect x="212" y="84" width="38" height="26" rx="3"/>
+                <rect x="232" y="170" width="60" height="38" rx="3" stroke="#9B7BFF"/>
+              </g>
+              <g font-family="JetBrains Mono, monospace" font-size="8" fill="#39D9E6">
+                <text x="140" y="125">vehicle</text><text x="212" y="79">vehicle</text><text x="232" y="165" fill="#9B7BFF">priority</text>
+              </g>
+              <rect x="160" y="200" width="44" height="10" rx="2" fill="none" stroke="#477BFF" stroke-dasharray="3 3"/>
+              <text x="160" y="222" font-family="JetBrains Mono, monospace" font-size="8" fill="#477BFF">road damage</text>
+            </svg>
+          </div>
+          <div class="project__body">
+            <p class="mono tag-flag"><span class="dot"></span> Flagship project</p>
+            <h3>AI Intelligent Traffic Management System</h3>
+            <p>A traffic management application that brings together vehicle detection, traffic analysis, road damage detection, prediction and emergency prioritization.</p>
+            <ul class="tags"><li>Python</li><li>FastAPI</li><li>YOLOv8</li><li>Computer Vision</li></ul>
+            <div class="project__links">
+              <a href="portfolio.html#p-traffic-management" class="textlink">View Project <span>&nearr;</span></a>
+                          </div>
+          </div>
+        </article>
+
+        <div class="projects__grid">
+          <article class="project project--card tilt reveal" style="--d:0s">
+            <div class="project__media">
+              <svg viewBox="0 0 400 240" role="img" aria-label="Abstract illustration of image analysis">
+                <rect width="400" height="240" fill="#0d1220"/>
+                <g fill="#171E2D"><circle cx="200" cy="120" r="78"/></g>
+                <circle cx="200" cy="120" r="78" fill="none" stroke="#477BFF" stroke-opacity=".5"/>
+                <circle cx="200" cy="120" r="46" fill="none" stroke="#39D9E6" stroke-dasharray="4 5"/>
+                <g stroke="#39D9E6" stroke-width="1.5" fill="none"><path d="M168 88v-12h12M232 88v-12h-12M168 152v12h12M232 152v12h-12"/></g>
+                <g fill="#9B7BFF" opacity=".8"><circle cx="190" cy="112" r="5"/><circle cx="214" cy="128" r="3"/><circle cx="206" cy="104" r="2.5"/></g>
+                <text x="130" y="222" font-family="JetBrains Mono, monospace" font-size="9" fill="#929BAE">image classification</text>
+              </svg>
+            </div>
+            <div class="project__body">
+              <span class="mono muted">02</span>
+              <h3>Skin Disease Classification</h3>
+              <p>An image classification project exploring AI-based medical image analysis.</p>
+              <ul class="tags"><li>Python</li><li>Deep Learning</li><li>Image Classification</li></ul>
+              <a href="portfolio.html#p-skin-disease-classification" class="textlink">View Project <span>&nearr;</span></a>
+            </div>
+          </article>
+
+          <article class="project project--card tilt reveal" style="--d:.1s">
+            <div class="project__media">
+              <svg viewBox="0 0 400 240" role="img" aria-label="Abstract illustration of a convolutional neural network">
+                <rect width="400" height="240" fill="#0d1220"/>
+                <g fill="none" stroke="#477BFF" stroke-opacity=".6">
+                  <rect x="60" y="80" width="40" height="80" rx="3"/><rect x="68" y="72" width="40" height="80" rx="3" stroke="#39D9E6"/>
+                  <rect x="150" y="92" width="30" height="56" rx="3"/><rect x="158" y="84" width="30" height="56" rx="3" stroke="#39D9E6"/>
+                  <rect x="230" y="104" width="20" height="32" rx="3"/><rect x="238" y="96" width="20" height="32" rx="3" stroke="#39D9E6"/>
+                </g>
+                <g fill="#9B7BFF"><circle cx="320" cy="96" r="6"/><circle cx="320" cy="120" r="6"/><circle cx="320" cy="144" r="6"/></g>
+                <path d="M258 112l56-16M258 112l56 8M258 112l56 32" stroke="#9B7BFF" stroke-opacity=".5"/>
+                <text x="134" y="210" font-family="JetBrains Mono, monospace" font-size="9" fill="#929BAE">convolutional network</text>
+              </svg>
+            </div>
+            <div class="project__body">
+              <span class="mono muted">03</span>
+              <h3>COVID-19 X-ray Classification</h3>
+              <p>A CNN-based image classification project.</p>
+              <ul class="tags"><li>Python</li><li>CNN</li><li>Deep Learning</li></ul>
+              <a href="portfolio.html#p-covid-xray-cnn" class="textlink">View Project <span>&nearr;</span></a>
+            </div>
+          </article>
+
+          <article class="project project--card tilt reveal" style="--d:.2s">
+            <div class="project__media">
+              <svg viewBox="0 0 400 240" role="img" aria-label="Abstract illustration of data points with a trend line">
+                <rect width="400" height="240" fill="#0d1220"/>
+                <path d="M50 190h300M50 190V40" stroke="#F4F6FC" stroke-opacity=".15"/>
+                <g fill="#39D9E6" opacity=".85"><circle cx="85" cy="165" r="3"/><circle cx="120" cy="150" r="3"/><circle cx="150" cy="158" r="3"/><circle cx="190" cy="122" r="3"/><circle cx="225" cy="130" r="3"/><circle cx="260" cy="92" r="3"/><circle cx="295" cy="98" r="3"/><circle cx="325" cy="62" r="3"/></g>
+                <path d="M70 172 335 58" stroke="#9B7BFF" stroke-width="2" stroke-linecap="round"/>
+                <text x="116" y="220" font-family="JetBrains Mono, monospace" font-size="9" fill="#929BAE">predictive modelling</text>
+              </svg>
+            </div>
+            <div class="project__body">
+              <span class="mono muted">04</span>
+              <h3>House Price Prediction</h3>
+              <p>A machine learning project involving data analysis and predictive modelling.</p>
+              <ul class="tags"><li>Python</li><li>Machine Learning</li><li>Data Analysis</li></ul>
+              <a href="portfolio.html#p-house-price-prediction" class="textlink">View Project <span>&nearr;</span></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="also reveal">
+          <p class="mono muted">Also explored</p>
+          <ul class="tags tags--lg"><li>Heart Failure Prediction</li><li>Alzheimer Classification</li><li>Mask Detection</li><li>Road Damage Detection</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TECHNICAL ARSENAL ============ -->
+    <section class="section" id="arsenal" data-section="arsenal">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="label"><span>04</span> Technical Arsenal</p>
+          <h2 class="h2">Tools I <span class="grad">Build With</span></h2>
+          <p class="section__sub">Grouped by what they help me do.</p>
+        </div>
+        <div class="arsenal">
+          <div class="arsenal__group reveal" style="--d:0s">
+            <h3 class="mono">Programming &amp; Web</h3>
+            <ul><li>Python</li><li>JavaScript</li><li>HTML</li><li>CSS</li></ul>
+          </div>
+          <div class="arsenal__group reveal" style="--d:.06s">
+            <h3 class="mono">Backend</h3>
+            <ul><li>FastAPI</li><li>Backend Development</li><li>REST API concepts</li><li>Application Integration</li></ul>
+          </div>
+          <div class="arsenal__group reveal" style="--d:.12s">
+            <h3 class="mono">Databases</h3>
+            <ul><li>SQL</li><li>Database Management</li><li>Database Development</li></ul>
+          </div>
+          <div class="arsenal__group reveal" style="--d:.18s">
+            <h3 class="mono">Machine Learning &amp; Data</h3>
+            <ul><li>Machine Learning</li><li>Scikit-learn</li><li>NumPy</li><li>Pandas</li><li>Matplotlib</li></ul>
+          </div>
+          <div class="arsenal__group reveal" style="--d:.24s">
+            <h3 class="mono">Deep Learning &amp; Vision</h3>
+            <ul><li>Deep Learning</li><li>Keras</li><li>PyTorch</li><li>OpenCV</li><li>Computer Vision</li></ul>
+          </div>
+          <div class="arsenal__group reveal" style="--d:.30s">
+            <h3 class="mono">Development Tools</h3>
+            <ul><li>Git</li><li>GitHub</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ JOURNEY ============ -->
+    <section class="section" id="journey" data-section="journey">
+      <div class="container journey">
+        <div class="journey__head reveal">
+          <p class="label"><span>05</span> My Journey</p>
+          <h2 class="h2">An Ongoing Journey of <span class="grad">Learning and Building.</span></h2>
+        </div>
+        <ol class="timeline">
+          <li class="reveal">
+            <span class="mono tl__date">2021 &ndash; 2025</span>
+            <h3>BS Computer Science (BSCS)</h3>
+            <p>The Islamia University of Bahawalpur.</p>
+          </li>
+          <li class="reveal">
+            <h3>Starting with Python &amp; Software Development</h3>
+            <p>Building a foundation in programming, application logic and backend development.</p>
+          </li>
+          <li class="reveal">
+            <h3>Machine Learning Projects</h3>
+            <p>Exploring classification and prediction through projects like skin disease, COVID-19 X-ray and house price models.</p>
+          </li>
+          <li class="reveal">
+            <h3>AI Intelligent Traffic Management System</h3>
+            <p>Bringing detection, analysis, prediction and prioritization together in one application.</p>
+          </li>
+          <li class="reveal is-next">
+            <span class="mono tl__date">Next</span>
+            <h3>Products, and a Company of My Own</h3>
+            <p>Growing from developer to product builder, and one day founder.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ VISION ============ -->
+    <section class="section vision" id="vision" data-section="vision">
+      <div class="vision__glow" aria-hidden="true"></div>
+      <div class="container vision__inner">
+        <p class="label reveal"><span>06</span> Beyond the Code</p>
+        <h2 class="vision__title reveal">Not Just Building Projects.<br><span class="grad">Building Towards a Vision.</span></h2>
+        <p class="vision__copy reveal">My ambition goes beyond writing code. I want to create meaningful products, explore new possibilities in technology, and eventually build solutions that make a real difference. Every project is another step towards that vision.</p>
+        <ul class="vision__path reveal" aria-label="Growth path">
+          <li>Developer</li><li class="arrow" aria-hidden="true">&rarr;</li><li>Product Builder</li><li class="arrow" aria-hidden="true">&rarr;</li><li class="is-goal">Founder</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact" data-section="contact">
+      <div class="container">
+        <div class="contact__panel reveal">
+          <p class="label"><span>07</span> Contact</p>
+          <h2 class="contact__title">Have an Idea?<br><span class="grad">Let&rsquo;s Build Something Meaningful.</span></h2>
+          <div class="hero__cta contact__cta">
+            <a href="mailto:khansawali.dev@gmail.com" class="btn btn--primary">Start a Conversation <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m0 0-5-5m5 5-5 5"/></svg></a>
+            <a href="assets/Khansa-Wali-CV.pdf" class="btn btn--ghost" target="_blank" rel="noopener">My Resume</a>
+          </div>
+          <ul class="contact__links">
+            <li><span class="mono muted">email</span><a href="mailto:khansawali.dev@gmail.com">khansawali.dev@gmail.com</a></li>
+            <li><span class="mono muted">whatsapp</span><a href="https://wa.me/923089661739?text=Hi%20Khansa%2C%20I%27d%20like%20to%20get%20in%20touch." target="_blank" rel="noopener">+92 308 9661739</a></li>
+            <li><span class="mono muted">linkedin</span><a href="https://www.linkedin.com/in/khansa-wali/" target="_blank" rel="noopener">linkedin.com/in/khansa-wali</a></li>
+            <li><span class="mono muted">github</span><a href="https://github.com/Khansa-wali/" target="_blank" rel="noopener">github.com/Khansa-wali</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#home" class="logo" aria-label="Khansa Wali, back to top">KW<span>.</span></a>
+        <p class="footer__name">Khansa Wali</p>
+        <p class="muted footer__pos">Python Developer | AI &amp; Machine Learning. Building Today. Exploring Tomorrow.</p>
+      </div>
+      <nav aria-label="Footer">
+        <h4 class="mono muted">Navigate</h4>
+        <a href="#home">Home</a><a href="#about">About</a><a href="#expertise">Expertise</a><a href="services.html">Services</a><a href="portfolio.html">Portfolio</a><a href="#journey">Journey</a><a href="contact.html">Contact</a>
+      </nav>
+      <div>
+        <h4 class="mono muted">Connect</h4>
+        <a href="https://www.linkedin.com/in/khansa-wali/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/Khansa-wali/" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:khansawali.dev@gmail.com">Email</a>
+      </div>
+    </div>
+    <div class="container footer__bar">
+      <span class="muted">&copy; <span id="year">2026</span> Khansa Wali. All rights reserved.</span>
+      <a href="#home" class="muted">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

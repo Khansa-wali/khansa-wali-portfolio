@@ -1,0 +1,95 @@
+/* =====================================================
+   Contact page — same tokens and component language as
+   style.css. Loaded only by contact.html.
+   ===================================================== */
+@keyframes pagein { from { opacity: 0; } to { opacity: 1; } }
+body[data-page="contact"] { animation: pagein .7s var(--ease) both; }
+[hidden] { display: none !important; }
+
+/* ---------- hero (kept compact) ---------- */
+.ct-hero { position: relative; padding: 140px 0 30px; text-align: center; overflow-x: clip; }
+.ct-hero__glow { position: absolute; z-index: -1; left: 50%; top: -80px; width: 900px; height: 480px; transform: translateX(-50%); background: radial-gradient(ellipse, rgba(71, 123, 255, .2), rgba(155, 123, 255, .08) 48%, transparent 70%); animation: drift 18s ease-in-out infinite alternate; }
+.ct-hero .eyebrow { margin-bottom: 28px; }
+.ct-title { font-family: var(--f-display); font-weight: 700; font-size: clamp(2.4rem, 5.6vw, 4.6rem); line-height: 1.04; letter-spacing: -.035em; }
+.ct-title .line { display: block; overflow: hidden; padding-bottom: .1em; }
+.ct-hero__sub { max-width: 620px; margin: 24px auto 0; color: var(--muted); font-size: 1.1rem; }
+
+/* ---------- sections ---------- */
+.ct-section { padding: clamp(50px, 7vw, 96px) 0; position: relative; }
+.ct-head { text-align: center; margin-bottom: clamp(32px, 5vw, 52px); }
+.ct-head .label { justify-content: center; }
+.ct-head .section__sub { margin-inline: auto; }
+
+/* ---------- channel cards ---------- */
+.channels { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.ch { position: relative; display: flex; flex-direction: column; gap: 14px; padding: 34px 30px 32px; border: 1px solid var(--line); border-radius: 20px; background: linear-gradient(160deg, rgba(23, 30, 45, .88), rgba(16, 21, 34, .88)); overflow: hidden; transition: border-color .4s, box-shadow .5s var(--ease), transform .5s var(--ease); }
+.ch::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 2px; background: var(--grad); transform: scaleX(0); transform-origin: left; transition: transform .6s var(--ease); }
+.ch:hover { border-color: rgba(57, 217, 230, .35); box-shadow: 0 30px 70px -34px rgba(71, 123, 255, .5); transform: translateY(-4px); }
+.ch:hover::before { transform: scaleX(1); }
+.ch__icon { width: 58px; height: 58px; border-radius: 16px; display: grid; place-items: center; background: rgba(57, 217, 230, .08); border: 1px solid rgba(57, 217, 230, .24); margin-bottom: 8px; transition: transform .5s var(--ease), background .4s; }
+.ch:hover .ch__icon { transform: translateY(-3px) rotate(-4deg); background: rgba(57, 217, 230, .14); }
+.ch__icon svg { width: 28px; height: 28px; fill: none; stroke: var(--cyan); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.ch h3 { font-family: var(--f-display); font-size: 1.5rem; letter-spacing: -.02em; }
+.ch p { color: var(--muted); font-size: .96rem; }
+.ch__detail { margin-top: auto; padding: 14px 0 6px; border-top: 1px solid var(--line); font-family: var(--f-mono); font-size: .8rem; letter-spacing: .02em; color: var(--text); word-break: break-all; }
+.ch .btn { width: 100%; justify-content: center; margin-top: 10px; }
+.ch.is-pending { border-style: dashed; border-color: var(--line-2); background: transparent; }
+.ch.is-pending .ch__detail { color: var(--violet); }
+.ch .btn[disabled] { opacity: .5; cursor: not-allowed; transform: none; }
+.ch .btn[disabled]:hover { border-color: var(--line-2); background: rgba(244, 246, 252, .03); transform: none; }
+
+/* ---------- topics + form ---------- */
+.ct-split { display: grid; grid-template-columns: .82fr 1.18fr; gap: 24px; align-items: start; }
+.ct-card { position: relative; border: 1px solid var(--line); border-radius: 22px; background: linear-gradient(160deg, rgba(23, 30, 45, .88), rgba(16, 21, 34, .88)); padding: clamp(28px, 3.6vw, 44px); overflow: hidden; }
+.ct-card::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 2px; background: var(--grad); }
+.ct-card h2 { font-family: var(--f-display); font-weight: 700; font-size: 1.6rem; letter-spacing: -.02em; }
+.ct-card__sub { color: var(--muted); font-size: .96rem; margin: 8px 0 24px; }
+.topics { display: grid; gap: 4px; }
+.topic { display: grid; gap: 4px; width: 100%; text-align: left; padding: 16px 18px; background: none; border: 1px solid transparent; border-radius: 14px; color: inherit; font: inherit; cursor: pointer; position: relative; transition: border-color .3s, background .3s, transform .4s var(--ease); }
+.topic b { font-family: var(--f-display); font-weight: 500; font-size: 1.05rem; padding-right: 28px; }
+.topic span { color: var(--muted); font-size: .9rem; line-height: 1.5; }
+.topic::after { content: ""; position: absolute; right: 18px; top: 22px; width: 8px; height: 8px; border-top: 2px solid var(--muted); border-right: 2px solid var(--muted); transform: rotate(45deg); transition: border-color .3s, transform .4s var(--ease); }
+.topic:hover { background: rgba(57, 217, 230, .05); border-color: var(--line-2); transform: translateX(4px); }
+.topic:hover::after { border-color: var(--cyan); transform: rotate(45deg) translate(2px, -2px); }
+.topic.is-picked { border-color: rgba(57, 217, 230, .45); background: rgba(57, 217, 230, .07); }
+.topic.is-picked::after { border-color: var(--cyan); }
+
+.form { display: grid; gap: 18px; }
+.form__row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.field { display: grid; gap: 8px; }
+.field label { font-family: var(--f-mono); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.field label i { color: var(--cyan); font-style: normal; }
+.field input, .field select, .field textarea { width: 100%; padding: 14px 16px; border: 1px solid var(--line-2); border-radius: 12px; background: rgba(244, 246, 252, .03); color: var(--text); font: inherit; font-size: .98rem; transition: border-color .3s, background .3s, box-shadow .3s; }
+.field textarea { min-height: 160px; resize: vertical; line-height: 1.6; }
+.field input::placeholder, .field textarea::placeholder { color: rgba(146, 155, 174, .7); }
+.field select { appearance: none; -webkit-appearance: none; padding-right: 42px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23929BAE' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; background-size: 18px; }
+.field select option { background: #101522; color: #F4F6FC; }
+.field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--cyan); background: rgba(57, 217, 230, .05); box-shadow: 0 0 0 4px rgba(57, 217, 230, .08); }
+.field input:user-invalid, .field textarea:user-invalid { border-color: #e0708a; }
+.form__actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 4px; }
+.form__actions .btn { flex: 1 1 220px; justify-content: center; }
+.form__note { color: var(--muted); font-size: .88rem; line-height: 1.6; }
+.form__status { min-height: 1.4em; font-size: .92rem; color: var(--text); }
+.form__status a { color: var(--cyan); border-bottom: 1px solid rgba(57, 217, 230, .4); }
+
+/* ---------- closing CTA ---------- */
+.ct-final { position: relative; text-align: center; padding: clamp(52px, 8vw, 100px) clamp(24px, 5vw, 80px); border: 1px solid var(--line); border-radius: 30px; overflow: hidden; display: flex; flex-direction: column; align-items: center; background: radial-gradient(ellipse 75% 70% at 50% 0%, rgba(71, 123, 255, .22), transparent 70%), radial-gradient(ellipse 60% 60% at 90% 100%, rgba(155, 123, 255, .14), transparent 70%), linear-gradient(160deg, rgba(23, 30, 45, .85), rgba(16, 21, 34, .9)); }
+.ct-final__title { font-family: var(--f-display); font-weight: 700; font-size: clamp(2.2rem, 5.4vw, 4.4rem); line-height: 1.04; letter-spacing: -.035em; }
+.ct-final__copy { max-width: 620px; margin-top: 24px; color: var(--muted); font-size: 1.1rem; }
+.ct-final .hero__cta { justify-content: center; margin-top: 34px; }
+
+/* ---------- responsive ---------- */
+@media (max-width: 1020px) {
+  .channels { grid-template-columns: 1fr; max-width: 560px; margin-inline: auto; }
+  .ct-split { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 640px) {
+  .ct-hero { padding-top: 118px; }
+  .form__row { grid-template-columns: 1fr; }
+  .ch { padding: 28px 24px; }
+  .ct-final .hero__cta .btn { width: 100%; justify-content: center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ct-hero__glow { animation: none; }
+  .topic:hover, .ch:hover { transform: none; }
+}
